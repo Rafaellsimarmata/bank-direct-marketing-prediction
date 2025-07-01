@@ -1,0 +1,359 @@
+feature {
+  name: "age"
+  type: INT
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "campaign"
+  type: INT
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "cons.conf.idx"
+  type: FLOAT
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "cons.price.idx"
+  type: FLOAT
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "contact"
+  type: BYTES
+  domain: "contact"
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "day_of_week"
+  type: BYTES
+  domain: "day_of_week"
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "default"
+  type: BYTES
+  domain: "default"
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "education"
+  type: BYTES
+  domain: "education"
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "emp.var.rate"
+  type: FLOAT
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "euribor3m"
+  type: FLOAT
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "housing"
+  type: BYTES
+  domain: "housing"
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "job"
+  type: BYTES
+  domain: "job"
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "loan"
+  type: BYTES
+  domain: "loan"
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "marital"
+  type: BYTES
+  domain: "marital"
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "month"
+  type: BYTES
+  domain: "month"
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "nr.employed"
+  type: FLOAT
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "pdays"
+  type: INT
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "poutcome"
+  type: BYTES
+  domain: "poutcome"
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "previous"
+  type: INT
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "y"
+  type: BYTES
+  domain: "y"
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+string_domain {
+  name: "contact"
+  value: "cellular"
+  value: "telephone"
+}
+string_domain {
+  name: "day_of_week"
+  value: "fri"
+  value: "mon"
+  value: "thu"
+  value: "tue"
+  value: "wed"
+}
+string_domain {
+  name: "default"
+  value: "no"
+  value: "unknown"
+  value: "yes"
+}
+string_domain {
+  name: "education"
+  value: "basic.4y"
+  value: "basic.6y"
+  value: "basic.9y"
+  value: "high.school"
+  value: "illiterate"
+  value: "professional.course"
+  value: "university.degree"
+  value: "unknown"
+}
+string_domain {
+  name: "housing"
+  value: "no"
+  value: "unknown"
+  value: "yes"
+}
+string_domain {
+  name: "job"
+  value: "admin."
+  value: "blue-collar"
+  value: "entrepreneur"
+  value: "housemaid"
+  value: "management"
+  value: "retired"
+  value: "self-employed"
+  value: "services"
+  value: "student"
+  value: "technician"
+  value: "unemployed"
+  value: "unknown"
+}
+string_domain {
+  name: "loan"
+  value: "no"
+  value: "unknown"
+  value: "yes"
+}
+string_domain {
+  name: "marital"
+  value: "divorced"
+  value: "married"
+  value: "single"
+  value: "unknown"
+}
+string_domain {
+  name: "month"
+  value: "apr"
+  value: "aug"
+  value: "dec"
+  value: "jul"
+  value: "jun"
+  value: "mar"
+  value: "may"
+  value: "nov"
+  value: "oct"
+  value: "sep"
+}
+string_domain {
+  name: "poutcome"
+  value: "failure"
+  value: "nonexistent"
+  value: "success"
+}
+string_domain {
+  name: "y"
+  value: "no"
+  value: "yes"
+}
