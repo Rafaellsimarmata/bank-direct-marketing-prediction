@@ -1,8 +1,10 @@
 FROM tensorflow/serving:latest
 
 COPY ./outputs/serving_model /models/cc-model
+COPY ./config /model_config
 
 ENV MODEL_NAME=cc-model
+ENV MONITORING_CONFIG="/model_config/prometheus.config"
 ENV PORT=8501
 
 RUN echo '#!/bin/bash \n\n\
